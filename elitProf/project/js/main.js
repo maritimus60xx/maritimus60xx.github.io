@@ -4,25 +4,25 @@ $(document).ready(function(){
 /*************************header__slider**********************************/
 
 
-// var headerBgImage = ['media/bg/header__bg--1.jpg', 'media/bg/header__bg--2.jpg'], i=1;
-//     function sliderHeader(){
+var headerBgImage = ['media/bg/header__bg--1.jpg', 'media/bg/header__bg--2.jpg'], i=1;
+    function sliderHeader(){
  
-//         if(i > (headerBgImage.length-1)){
-//             $('.header__bg').animate({'opacity':'0'},0,function(){
-//                 i=1;
-//                 $('.header__bg').css({'background-image':'url('+headerBgImage[0]+')'});
-//             });
-//             $('.header__bg').animate({'opacity':'1'},0);
-//         }else{
-//             $('.header__bg').animate({'opacity':'0'},0,function(){
-//                 $('.header__bg').css({'background-image':'url('+headerBgImage[i]+')'});
-//                 i++;
-//             });
-//             $('.header__bg').animate({'opacity':'1'},0);
-//         }
+        if(i > (headerBgImage.length-1)){
+            $('.header__bg').animate({'opacity':'0'},0,function(){
+                i=1;
+                $('.header__bg').css({'background-image':'url('+headerBgImage[0]+')'});
+            });
+            $('.header__bg').animate({'opacity':'1'},0);
+        }else{
+            $('.header__bg').animate({'opacity':'0'},0,function(){
+                $('.header__bg').css({'background-image':'url('+headerBgImage[i]+')'});
+                i++;
+            });
+            $('.header__bg').animate({'opacity':'1'},0);
+        }
          
-//     }
-//     var intervalSliderHeader = setInterval(sliderHeader,7000);
+    }
+    var intervalSliderHeader = setInterval(sliderHeader,7000);
 
 /****************************************************************************/
 
