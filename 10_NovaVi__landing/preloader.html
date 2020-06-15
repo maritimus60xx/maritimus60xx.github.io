@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="">
+	<meta name="Author" content="W.code">
+	<meta name="Copyright" content="W.code">
+
+	<title>Preloader</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!--  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<!--  -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- starts document -->
+	<div class="wrapper">
+		<div class="wrapper__content">
+			<div class="preloader">
+				<div class="preloader__content">
+					<div class="preloader__box">
+						<div class="preloader-first"></div>
+						<div class="preloader-second"></div>
+						<div class="preloader-third"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/wheel.js"></script>
+
+	<!--  -->
+	<script src="js/parallax.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!--  -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/defaults-ru_RU.min.js"></script>
+	<script src="js/defaults-en_US.min.js"></script>
+
+	<script>
+		var circleItems = [
+			{
+				name: "finance",
+				result: 0
+			},
+			{
+				name: "person",
+				result: 0
+			},
+			{
+				name: "job",
+				result: 0
+			},
+			{
+				name: "rest",
+				result: 0
+			},
+			{
+				name: "health",
+				result: 0
+			},
+			{
+				name: "relationship",
+				result: 0
+			},
+			{
+				name: "environment",
+				result: 0
+			},
+			{
+				name: "spirit",
+				result: 0
+			}
+		]
+
+		function manageSelectParts(sender) {
+			let elementId = sender.id.replace('select-', '');
+
+			$('#' + elementId + '-part').attr('value-select', $('#select-' + elementId).val());
+			let valueBg = 50 + (50 * ($('#' + elementId + '-part').attr('value-select') * 0.1));
+			$('#' + elementId + '-part').css('background-size', "" + valueBg + "%");
+			$('.wheel-modal').fadeOut(200);
+
+			var indexInCircleItems = circleItems.map(n => n.name).indexOf(elementId);
+
+			if (indexInCircleItems < circleItems.length) {
+				circleItems[indexInCircleItems].result = Number.parseInt(sender.value);
+				if (indexInCircleItems + 1 < circleItems.length)
+					$('.wheel-' + circleItems[indexInCircleItems + 1].name).fadeIn(500);
+			}
+
+			if (elementId === 'spirit') {
+				var sumAllValueSelect = circleItems.map(c => c.result).reduce((pv, cv) => pv + cv, 0);
+				$("#wheel-btn").html('Еще раз');
+				$("#wheel-btn").addClass('clean-value');
+
+				if (sumAllValueSelect >= 72) {
+					$('.modal__wheel-great').fadeIn();
+				} else if (sumAllValueSelect <= 72 && sumAllValueSelect >= 40) {
+					$('.modal__wheel-good').fadeIn();
+				} else {
+					$('.modal__wheel-bad').fadeIn();
+				}
+			}
+		}
+		function cleanValue() {
+			for (let i = 0; i < circleItems.length; i++) {
+				circleItems[i].result = 0;
+				// console.log('#select-' + circleItems[i].name);
+				$('.filter-option-inner-inner').html('');
+				$('#select-' + circleItems[i].name).val(0);
+				console.log($('#select-' + circleItems[i].name).val());
+				$('#' + circleItems[i].name + '-part').css('background-size', "10%");
+			}
+		}
+		$(document).on('click', '#wheel-btn', function () {
+			if ($(this).hasClass('clean-value')) {
+				cleanValue();
+			}
+		});
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+.tariffs-page {
+	height: auto;
+	.burger {
+		background-image: url("../img/header/burger-000.svg");
+	}
+	@media (max-width: 950px) {
+		height: 100%;
+	}
+}
+
+.tariffs {
+	width: 100%;
+	padding: 130px 100px 0;
+	&__content {
+		max-width: 1500px;
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 30px;
+		align-items: stretch;
+		@media (max-width: 1200px) {
+			max-width: 720px;
+			grid-template-columns: 1fr 1fr;
+			row-gap: 20px;
+			column-gap: 20px;
+			padding: 80px 0 40px;
+		}
+		@media (max-width: 600px) {
+			padding: 20px 0;
+			column-gap: 10px;
+			row-gap: 10px;
+		}
+		@media (max-width: 550px) {
+			padding: 20px 0;
+			grid-template-columns: 1fr;
+			column-gap: 0;
+			row-gap: 15px;
+		}
+	}
+	@media (max-height: 830px) {
+		padding: 70px 100px 0;
+	}
+	@media (max-height: 690px) {
+		padding: 40px 100px 0;
+	}
+	@media (max-width: 1610px) {
+		column-gap: 27px;
+	}
+	@media (max-width: 1400px) {
+		padding: 20px 30px 0;
+	}
+	@media (max-width: 600px) {
+		padding: 20px 15px 20px;
+	}
+}
+.tariff {
+	&__item {
+		padding: 2px;
+		cursor: pointer;
+	}
+
+	&__bg {
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 18px;
+		transition: background-color 0.2s linear;
+	}
+
+	&__top {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		font-size: 42px;
+		line-height: 44px;
+		font-weight: 700;
+		text-align: center;
+		color: #000;
+		display: block;
+
+		// span {
+		// 	display: block;
+		// }
+		@media (max-width: 1610px) {
+			font-size: 35px;
+			line-height: 42px;
+		}
+	}
+
+	&__center {
+		width: 100%;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	&__option {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 23px;
+		font-weight: 300;
+		padding-left: 22px;
+		display: block;
+		position: relative;
+		margin: 9px 0;
+		transition: color 0.2s linear;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #000;
+			transition: color 0.2s linear;
+			@media (max-width: 1610px) {
+				width: 5px;
+				height: 5px;
+			}
+		}
+		@media (max-width: 1610px) {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 7px 0;
+		}
+	}
+
+	&__bottom {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 16px;
+		@media (max-width: 1610px) {
+			padding-top: 10px;
+		}
+	}
+
+	&__caption {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 0px;
+		transition: color 0.2s linear;
+		@media (max-width: 1610px) {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 3px 0;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 27px;
+		text-transform: uppercase;
+		color: #000;
+		border: 1px solid;
+		border-image-slice: 1;
+		border-width: 1px;
+		padding: 10px 0;
+		background-color: transparent;
+		margin-top: 18px;
+		transition: color 0.2s linear;
+		@media (max-width: 1610px) {
+			font-size: 18px;
+			line-height: 20px;
+			margin: 7px 0;
+		}
+		span {
+			display: block;
+		}
+	}
+}
+
+// bronze.
+.bronze {
+	background: linear-gradient(30.93deg, #be7837 0.7%, #f2bf7b 37.1%, #e3a654 60.48%, #be7837 98%);
+}
+.bronze-title {
+	display: block;
+	background: -webkit-linear-gradient(
+		90deg,
+		#211400 -40.56%,
+		#4e391c -25.31%,
+		#b58c5c -0.55%,
+		#fac988 22.31%,
+		#f7daa3 37.55%,
+		#fee0b3 47.27%,
+		#fee0b3 50.89%,
+		#fee0b3 54.7%,
+		#f7daa3 64.22%,
+		#fac988 79.46%,
+		#b58c5c 102.32%,
+		#4e391c 127.09%,
+		#170b00 142.33%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.bronze-btn {
+	border-image-source: linear-gradient(30.93deg, #be7837 0.7%, #f2bf7b 37.1%, #e3a654 60.48%, #be7837 98%);
+}
+
+// silver.
+.silver {
+	background: linear-gradient(
+		34.08deg,
+		#bebebe -3.6%,
+		#bfc1c3 21.5%,
+		#d6d7d8 42.95%,
+		#e2e2e2 54%,
+		#caccce 73.27%,
+		#a5a5a5 93.48%
+	);
+}
+.silver-title {
+	display: block;
+	background: -webkit-linear-gradient(
+		90deg,
+		#9d9d9d -1.52%,
+		#bfc1c3 20.23%,
+		#cfcfcf 27.13%,
+		#ececec 55.79%,
+		#a5a5a5 100.36%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.silver-btn {
+	border-image-source: linear-gradient(
+		34.08deg,
+		#bebebe -3.6%,
+		#bfc1c3 21.5%,
+		#d6d7d8 42.95%,
+		#e2e2e2 54%,
+		#caccce 73.27%,
+		#a5a5a5 93.48%
+	);
+}
+
+// gold.
+
+.gold {
+	background: linear-gradient(22deg, #c17711 27.1%, #fee37c 87.97%, #fad065 97.28%);
+}
+.gold-title {
+	display: block;
+	background: -webkit-linear-gradient(22deg, #c17711 27.1%, #fee37c 87.97%, #fad065 97.28%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.gold-btn {
+	border-image-source: linear-gradient(22deg, #c17711 27.1%, #fee37c 87.97%, #fad065 97.28%);
+}
+
+// platinum.
+
+.platinum {
+	background: linear-gradient(30.84deg, #565656 1.04%, #959291 30.3%, #bab8b7 43.64%, #959393 62.87%, #595959 99.48%);
+}
+.platinum-title {
+	display: block;
+	background: -webkit-linear-gradient(
+		30.84deg,
+		#565656 1.04%,
+		#959291 30.3%,
+		#bab8b7 43.64%,
+		#959393 62.87%,
+		#595959 99.48%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.platinum-btn {
+	border-image-source: linear-gradient(
+		30.84deg,
+		#565656 1.04%,
+		#959291 30.3%,
+		#bab8b7 43.64%,
+		#959393 62.87%,
+		#595959 99.48%
+	);
+}
+
+.tariff__item:hover {
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 0.55);
+	.tariff__bg {
+		background-color: transparent;
+		transition: background-color 0.2s linear;
+	}
+	.bronze-title {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #ffffff -40.56%, #ffffff -25.31%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.silver-title {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #ffffff -40.56%, #ffffff -25.31%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.gold-title {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #ffffff -40.56%, #ffffff -25.31%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.platinum-title {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #ffffff -40.56%, #ffffff -25.31%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.tariff__option {
+		color: #fff;
+		transition: color 0.2s linear;
+	}
+	.tariff__option:after {
+		background-color: #fff;
+		transition: color 0.2s linear;
+	}
+	.tariff__caption {
+		color: #fff;
+		transition: color 0.2s linear;
+	}
+
+	.tariff__btn {
+		color: #fff;
+		border: none;
+		padding: 11px 0;
+		background-color: #ffffff50;
+		transition: color 0.2s linear;
+	}
+}
+
+// .silver:hover {
+// 	.tariff__option {
+// 		color: #000;
+// 	}
+// 	.tariff__option:after {
+// 		background-color: #000;
+// 		transition: color 0.2s linear;
+// 	}
+// 	.tariff__caption {
+// 		color: #000;
+// 	}
+
+// 	.tariff__btn {
+// 		color: #000;
+// 	}
+// }
+
+.bronze-btn:hover {
+	background-color: #fff !important;
+	span {
+		display: block;
+		background: -webkit-linear-gradient(30.93deg, #be7837 0.7%, #f2bf7b 37.1%, #e3a654 60.48%, #be7837 98%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.silver-btn:hover {
+	background-color: #fff !important;
+	span {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #5c5c5c 1.04%, #929292 45.65%, #e9e6e5 79.89%, #807d7c 99.09%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.gold-btn:hover {
+	background-color: #fff !important;
+	span {
+		display: block;
+		background: -webkit-linear-gradient(90.46deg, #c17711 1.99%, #fee37c 75.44%, #fad065 99.93%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.platinum-btn:hover {
+	background-color: #fff !important;
+	span {
+		display: block;
+		background: -webkit-linear-gradient(90deg, #5c5c5c 1.04%, #929292 45.65%, #e9e6e5 79.89%, #807d7c 99.09%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

@@ -1,0 +1,64 @@
+.registration-page {
+	height: auto;
+}
+
+.entry-link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: #000000;
+	flex: 0 1 300px;
+	text-align: right;
+	@media (max-width: 570px) {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 27px;
+	}
+}
+
+.bg-registration-text {
+	@media (max-width: 680px) {
+		font-size: 106px;
+		line-height: 110px;
+		margin-top: -33px;
+	}
+	@media (max-width: 390px) {
+		font-size: 85px;
+		line-height: 98px;
+		margin-top: -33px;
+	}
+}
+
+.registration__input {
+	@media (max-width: 1450px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 1370px) {
+		margin-bottom: 10px;
+	}
+	@media (max-width: 376px) and (max-height: 820px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 376px) and (max-height: 650px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 376px) and (max-height: 590px) {
+		margin-bottom: 10px;
+	}
+}
+.registration-btn {
+	margin-top: 20px;
+	@media (max-width: 1370px) {
+		margin-top: 15px;
+	}
+	@media (max-width: 376px) and (max-height: 820px) {
+		margin-top: 40px;
+	}
+	@media (max-width: 376px) and (max-height: 650px) {
+		margin-top: 20px;
+	}
+	@media (max-width: 376px) and (max-height: 590px) {
+		margin-top: 15px;
+	}
+}
