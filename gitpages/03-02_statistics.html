@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="">
+  <meta name="Author" content="NovaVi">
+  <meta name="Copyright" content="NovaVi">
+
+  <title>Control Panel</title>
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <!--  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/perfect-scrollbar.css">
+  <!--  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wrapper__body">
+      <!-- main-panel -->
+      <div class="panel">
+        <div id="panel-body" class="panel__body">
+          <div class="panel__col">
+            <!-- Panel Logo -->
+            <div class="panel__logo">
+              <a href="#" class="logo-link">
+                <img src="img/main-panel/logo-min.svg" alt="logo-min" class="min-logo">
+                <img src="img/main-panel/logo-main.svg" alt="logo-main" class="main-logo">
+              </a>
+            </div>
+            <!-- Panel nav. -->
+            <nav class="panel__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link active-link">
+                    <img src="img/main-panel/info.svg" alt="">
+                    <p class="nav__text">Информирование</p>
+                    <span class="down"></span>
+                  </a>
+                  <div class="sub-list">
+                    <a href="#" class="s-link s-link--active">Соцсети</a>
+                    <a href="#" class="s-link">Вебинары</a>
+                    <a href="#" class="s-link">Прайм-Таймы</a>
+                    <a href="#" class="s-link">Подсказки</a>
+                    <a href="#" class="s-link">Уроки</a>
+                    <a href="#" class="s-link">Лиги</a>
+                    <a href="#" class="s-link">Новости</a>
+                    <a href="#" class="s-link">Список результатов</a>
+                    <a href="#" class="s-link">Мероприятия</a>
+                    <a href="#" class="s-link">Почта</a>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link ">
+                    <img src="img/main-panel/admin.svg" alt="">
+                    <p class="nav__text">Администраторам</p>
+                    <span class="down"></span>
+                  </a>
+                  <div class="sub-list">
+                    <a href="#" class="s-link">Настройки апдейта</a>
+                    <a href="#" class="s-link">Лог скриптов</a>
+                    <a href="#" class="s-link">Парсеры</a>
+                    <a href="#" class="s-link">Букмекеры</a>
+                    <a href="#" class="s-link">Роли</a>
+                    <a href="#" class="s-link">Баны</a>
+                    <a href="#" class="s-link">TeamCity</a>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img src="img/main-panel/bets.svg" alt="">
+                    <p class="nav__text">Ставки</p>
+                    <span class="down"></span>
+                  </a>
+                  <div class="sub-list">
+                    <a href="#" class="s-link">Поиск ставок</a>
+                    <a href="#" class="s-link">Статистика</a>
+                    <a href="#" class="s-link">Рейтинги</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="content">
+        <!-- header -->
+        <div class="header">
+          <div class="header__body">
+            <div class="burger">
+              <div class="burger__body"></div>
+            </div>
+            <div class="admin">
+              <p class="admin__name">Admin</p>
+              <div class="admin__img">
+                <img src="img/header/avatar.png" alt="admin-img">
+              </div>
+              <div class="admin-action ">
+                <div class="admin-arrow"></div>
+                <div class="exit">
+                  <p class="exit__text">Выйти</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header ends -->
+        <main class="main">
+          <div class="page">
+            <div class="page__body">
+              <!-- page-top -->
+              <div class="page__top">
+                <h2 class="page__title">Статистика</h2>
+                <div class="page__info">
+                  <div class="interval">
+                    <input type="date" class="interval-date">
+                    <span>-</span>
+                    <input type="date" class="interval-date">
+                    <button class="interval-btn">
+                      <img src="img/page-icons/search.svg" alt="search">
+                    </button>
+                  </div>
+                  <div class="count__row">
+                    <p class="info__text">Кол-во зарегистрированных пользователей: 1445</p>
+                    <p class="info__text">Кол-во пользователей принявших апдейт: 145</p>
+                  </div>
+                </div>
+              </div>
+              <!-- page-intro -->
+              <div class="intro">
+                <div class="intro__body">
+                  <div class="intro__top stat-top">
+                    <div class="top__body">
+                      <div class="top__item t-item--active">
+                        <p>Кол-во ставок - 475</p>
+                      </div>
+                      <div class="top__item">
+                        <p>Кол-во незакрытых ставок - 475</p>
+                      </div>
+                      <div class="top__item">
+                        <p>Общая сумма ставок - 475</p>
+                      </div>
+                      <div class="top__item">
+                        <p>Кол-во пользователей- 475</p>
+                      </div>
+                      <div class="top__item">
+                        <p>Кол-во лицензий- 47</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- add class ".bets" for all bets-tabs, users-count - ".c-users", licenses-count - ".c-license" -->
+                  <div class="sub-top c-license">
+                    <!-- bets titles -->
+                    <!-- <p class="item__text stat-t-n">№</p>
+                    <p class="item__text stat-t-name">Название</p>
+                    <p class="item__text stat-t-count">Кол-во</p> -->
+                    <!-- count of users titles -->
+                    <!-- <p class="item__text stat-t-n">№</p>
+                    <p class="item__text stat-t-email">Email</p>
+                    <p class="item__text stat-t-login">Last Login Date</p>
+                    <p class="item__text stat-t-update">Update Is Accepted</p>
+                    <p class="item__text stat-t-logged">Is Logged In</p>
+                    <p class="item__text stat-t-bets">Bets Count</p>
+                    <p class="item__text stat-t-profit">Profit</p>
+                    <p class="item__text stat-t-date">Last Bet Date</p> -->
+                    <!-- count if lisenses titles -->
+                    <p class="item__text stat-t-n ">№</p>
+                    <p class="item__text stat-t-date">Date</p>
+                    <p class="item__text stat-t-email">Email продавца</p>
+                    <p class="item__text stat-t-email">Email покупателя</p>
+                    <p class="item__text stat-t-sum">Сумма</p>
+                  </div>
+                  <div class="intro__scroll stat-intro">
+                    <div class="intro__list">
+                      <!-- list starts -->
+                      <!-- bets-tabs -->
+                      <div class="list__item bets">
+                        <p class="item__text stat-t-n bets">1</p>
+                        <p class="item__text stat-t-name bets">Marathonbet</p>
+                        <p class="item__text stat-t-count bets">34</p>
+                      </div>
+                      <!-- users-count -->
+                      <div class="list__item c-users">
+                        <p class="item__text stat-t-n ">1</p>
+                        <p class="item__text stat-t-email">9224708833@mail.ru</p>
+                        <p class="item__text stat-t-login">28.07.2020 17:25:16</p>
+                        <p class="item__text stat-t-update">True</p>
+                        <p class="item__text stat-t-logged">True</p>
+                        <p class="item__text stat-t-bets">4</p>
+                        <p class="item__text stat-t-profit">0.00</p>
+                        <p class="item__text stat-t-date">28.07.2020 17:25:16</p>
+                      </div>
+                      <!-- lisense-count -->
+                      <div class="list__item c-license">
+                        <p class="item__text stat-t-n">1</p>
+                        <p class="item__text stat-t-date">28.07.2020 17:25:16</p>
+                        <p class="item__text stat-t-email">9224708833@mail.ru</p>
+                        <p class="item__text stat-t-email">9224708833@mail.ru</p>
+                        <p class="item__text stat-t-sum">Сумма</p>
+                      </div>
+
+                      <!-- list ends -->
+                    </div>
+                  </div>
+                  <div class="intro__bar">
+                    <div class="page-prew">
+                      <img src="img/page-icons/prew.svg" alt="prew">
+                    </div>
+                    <ul class="page-list">
+                      <li class="page-num">1</li>
+                      <li class="page-num active-num">2</li>
+                      <li class="page-num">3</li>
+                      <li class="page-num">4</li>
+                    </ul>
+                    <div class="page-next">
+                      <img src="img/page-icons/next.svg" alt="next">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- intro-ends -->
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- content ends -->
+
+      <!-- Modals starts -->
+
+
+      <!-- Modals ends -->
+    </div>
+  </div>
+
+
+  <script src="js/main-panel.js"></script>
+  <!--  -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/defaults-en_US.min.js"></script>
+  <script src="js/defaults-ru_RU.min.js"></script>
+  <!--  -->
+
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+
+</body>
+
+</html>
