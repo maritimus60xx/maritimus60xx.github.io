@@ -3291,7 +3291,7 @@ input[id*="ref-radio-"]:checked ~ span:after {
 
 @media (max-width: 1070px) {
   .pack-page {
-    height: calc(100vh - 48px);
+    height: auto;
   }
 }
 
