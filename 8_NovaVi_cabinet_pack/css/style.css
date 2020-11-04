@@ -3749,7 +3749,6 @@ input[id*="b-i-chek_"]:checked + span:after {
   margin-top: 30px;
   padding: 25px;
   opacity: 0;
-  overflow: hidden;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
