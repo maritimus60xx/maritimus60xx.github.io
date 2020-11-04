@@ -1,0 +1,146 @@
+/******STYLE REFERAL LINKS*******/
+
+.referal-links {
+	background-color: #fff;
+	padding: 12px 80px 12px 40px;
+	@media (max-width: 1910px) {
+		padding: 12px 40px 12px 40px;
+	}
+	@media (max-width: 1790px) {
+		padding: 12px 20px 12px 20px;
+	}
+	@media (max-width: 560px) {
+		padding: 12px 20px 12px;
+	}
+	@media (max-width: 350px) {
+		padding: 12px 10px 12px;
+	}
+}
+.ref {
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:first-child {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__row--top {
+		align-items: flex-start;
+		@media (max-width: 560px) {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+	}
+
+	&__row--bottom {
+		@media (max-width: 1410px) {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		@media (max-width: 560px) {
+			align-items: center;
+		}
+	}
+}
+.ref-radio {
+	flex: 0 1 240px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	@media (max-width: 1590px) {
+		flex: 0 1 230px;
+	}
+	@media (max-width: 560px) {
+		flex: 0 1 auto;
+		max-width: 250px;
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+.ref-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+.ref-label {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	span {
+		margin-top: 7px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid #000;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:after {
+			content: "";
+			display: none;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #000;
+		}
+	}
+}
+input[id*="ref-radio-"]:checked ~ span:after {
+	display: block;
+}
+.ref-text {
+	font-size: 14px;
+	line-height: 19px;
+	@media (max-width: 1590px) {
+		font-size: 13px;
+	}
+}
+
+.ref-copy {
+	flex: 0 1 270px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 1790px) {
+		max-width: 270px;
+		width: 100%;
+		flex: 0 1 auto;
+	}
+	&:nth-child(1) {
+		max-width: 240px;
+		width: 100%;
+		@media (max-width: 1790px) and (min-width: 1410px) {
+			max-width: 240px;
+			width: 100%;
+			flex: 0 1 auto;
+			margin-right: 10px;
+		}
+	}
+	@media (max-width: 1410px) {
+		margin-bottom: 10px;
+	}
+	&__text {
+	}
+
+	&__img {
+	}
+
+	&__copy {
+		font-size: 14px;
+		line-height: 19px;
+		text-decoration: underline;
+		cursor: pointer;
+		color: #a603be;
+	}
+}
