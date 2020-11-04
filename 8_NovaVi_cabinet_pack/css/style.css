@@ -3787,7 +3787,8 @@ input[id*="b-i-chek_"]:checked + span:after {
 
 @media (max-width: 1070px) {
   .pack__info--flex {
-    height: 160px;
+    height: 160px !important;
+    min-height: 159px;
   }
 }
 
