@@ -3291,7 +3291,7 @@ input[id*="ref-radio-"]:checked ~ span:after {
 
 @media (max-width: 1070px) {
   .pack-page {
-    height: auto;
+    height: calc(100vh - 48px);
   }
 }
 
@@ -3783,6 +3783,12 @@ input[id*="b-i-chek_"]:checked + span:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1070px) {
+  .pack__info--flex {
+    height: 160px;
+  }
 }
 
 .pack__info--active {
