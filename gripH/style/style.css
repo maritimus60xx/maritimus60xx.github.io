@@ -363,6 +363,12 @@ a {
   color: #0a0a0b;
   line-height: 35px;
 }
+.footer__element--link span {
+  display: inline-block;
+  background: -webkit-linear-gradient(249.31deg, rgba(255, 255, 255, 0) 23.26%, #00fffe 100%), linear-gradient(145.15deg, #5b9cf0 37.03%, #00e0ff 163.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .modal {
   width: 100%;
   height: 100%;
