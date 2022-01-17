@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/Gilroy-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/Gilroy-MediumItalic.ttf") format("truetype");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/Gilroy-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Intro";
+	src: url("https://maritimus60xx.github.io/02_letters/fonts/intro.ttf") format("truetype");
+	font-weight: 400;
+}
